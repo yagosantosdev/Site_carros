@@ -4,7 +4,7 @@
     <form method ="post" enctype="multipart/form-data">
         {%csrf_token%}
         <table>
-            {{new_car_form.as_table}}
+            {{new_car_form.as_table}} <!--- renderiza em formato de tabela -->
         </table>  
         
         <input type = 'submit' value = 'cadastrar' class='btm-primary'>
